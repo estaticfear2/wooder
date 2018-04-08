@@ -1,0 +1,40 @@
+.section-title {
+  position: relative;
+  margin: 0;
+  font-size: 45px;
+  line-height: 100px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  
+  &--decor::before {
+    content: "";
+    position: absolute;
+    width: 151px;
+    height: 1px;
+    top: 52px;
+    left: -178px;
+    background-color: black;
+  }
+
+  &--decor-reverse::before {
+    content: "";
+    position: absolute;
+    width: 151px;
+    height: 1px;
+    top: 52px;
+    right: -179px;
+    background-color: black;
+  }
+
+  &--main-color {
+    width: 515px;
+    line-height: 60px;
+    letter-spacing: .025em;
+    color: @maincolor;
+    
+    &::before {
+      background-color: white;
+      top: 30px;
+    }
+  }
+}

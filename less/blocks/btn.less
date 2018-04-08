@@ -1,0 +1,103 @@
+.btn {
+  position: relative;
+  line-height: 70px;
+  letter-spacing: .2em;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  
+  &--black {
+    margin-left: 32px;
+    padding: 19px 104px 21px 86px;
+    border: 2px solid white;
+    color: white;
+    
+    &::before {
+      width: 34px;
+      height: 11px;
+      top: 50%;
+      right: 64px;
+      transform: translateY(-50%);
+      background-image: url("../img/btn-arrow-wh.png");
+    }
+  }
+  
+  &--scroll {
+    display: block;
+    margin-top: 68px;
+    padding-top: 145px;
+    margin-left: 9px;
+    color: rgba(255, 255, 255, .1);
+    writing-mode: vertical-lr;
+    
+    &::before {
+      width: 20px;
+      height: 127px;
+      top: -5px;
+      left: 24px;
+      background-image: url("../img/scroll.png");
+    }
+  }
+  
+  &--share {
+    position: absolute;
+    width: 23px;
+    height: 25px;
+    bottom: 23px;
+    right: 31px;
+    
+    &::before {
+      width: 23px;
+      height: 25px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/share.png");
+    }
+  }
+  
+  &--white {
+    padding: 8px 50px 8px 0;
+    
+    &::before {
+      width: 35px;
+      height: 7px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-image: url("../img/btn-arrow.png");
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 2px;
+      bottom: 0;
+      left: -1px;
+      background-color: @maincolor;
+    }
+  }
+  
+  &--video {
+    margin-left: 6px;
+    padding-left: 105px;
+    padding-right: 75px;
+    
+    &::before {
+      width: 25px;
+      height: 25px;
+      left: 66px;
+      background-image: url("../img/play-big.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

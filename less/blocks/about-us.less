@@ -1,0 +1,64 @@
+.about-us {
+  position: relative;
+  padding: 138px 525px 122px 388px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  &::before {
+    content: "A";
+    position: absolute;
+    top: -13px;
+    right: 320px;
+    font-family: @mainfambold;
+    font-size: 350px;
+    color: @maincolor;
+    opacity: .07;
+    text-transform: uppercase;
+  }
+  
+  &::after {
+    content: "About us";
+    position: absolute;
+    top: 46%;
+    left: -68px;
+    font-family: @mainfambold;
+    font-size: 160px;
+    letter-spacing: .07em;
+    color: #d0d0d0;
+    opacity: .2;
+    text-transform: uppercase;
+  }
+  
+  &__img {
+    display: block;
+    width: 589px;
+    height: 401px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+  }
+  
+  &__info-wrapper {
+    width: 325px;
+    padding-top: 62px;
+  }
+  
+  &__text {
+    position: relative;
+    font-family: @mainfam;
+    margin-top: -4px;
+    margin-bottom: 0;
+    color: #464646;
+    
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 4px;
+      top: 10px;
+      left: -70px;
+      background-color: @maincolor;
+    }
+  }
+}

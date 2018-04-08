@@ -1,0 +1,41 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__marker {
+    display: block;
+    position: relative;
+    margin-bottom: 85px;
+    font-family: "Arial", sans-serif;
+    font-size: 52.4px;
+    line-height: 58.22px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: @maincolor;
+    writing-mode: vertical-lr;
+    vertical-align: bottom;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      width: 4px;
+      height: 51px;
+      background-color: @maincolor;
+    }
+  }
+  
+  &__toggle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #303030;
+    margin-bottom: 40px;
+    
+    &--active {
+      background-color: @maincolor;
+    }
+  }
+}

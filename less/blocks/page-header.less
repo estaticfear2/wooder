@@ -1,0 +1,51 @@
+.page-header {
+  position: relative;
+  width: auto;
+  height: 1042px;
+  color: white;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1042px;
+    background-image: url("../img/bg-header-left.jpg"),
+      url("../img/bg-header-right.jpg");
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    opacity: .15;
+    z-index: -1;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -2;
+  }
+  
+  &__wrapper {
+    .container();
+    
+    margin-top: 261px; 
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__inscription {
+    margin-top: 0px;
+    font-size: 13.69px;
+    line-height: 56.69px;
+    letter-spacing: .2em;
+    color: #bea67c;
+    opacity: .2;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+  }
+}
